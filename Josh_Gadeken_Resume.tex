@@ -1,0 +1,111 @@
+% Josh Gadeken Resume
+% Copyright (C) 2017 Josh Gadeken
+\documentclass[a4paper,10pt]{article}
+\usepackage[includeheadfoot, top=1cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+
+\usepackage[colorlinks=true,urlcolor=black]{hyperref}
+
+\usepackage{fontawesome}
+
+\usepackage{xcolor}
+
+\usepackage{microtype}
+\DisableLigatures{encoding = *, family = *}
+
+\input{contact_info.tex}
+
+\usepackage{fancyhdr}
+\setlength{\headheight}{44.0pt}
+\setlength{\footskip}{9pt}
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headsep}{20pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[C]{
+    \Huge\textbf{Josh Gadeken} \\
+    \vspace*{1ex}
+    \normalsize
+    \begin{tabular}{l|l|l|l}
+        \faEnvelope \hspace*{1pt} \href{mailto:\myemail}{\myemail} & \faMobile \hspace*{1pt} \myphone & \faLinkedinSquare \hspace*{1pt} \href{https://www.linkedin.com/in/joshgadeken}{joshgadeken} & \faGithub \hspace*{1pt} \href{https://github.com/process1183}{process1183} \\
+    \end{tabular}
+}
+\fancyfoot[L]{\textcolor{gray}{Josh Gadeken - R\'{e}sum\'{e}}}
+\fancyfoot[R]{\textcolor{gray}{\thepage}}
+
+\usepackage{sectsty}
+\sectionfont{\mdseries\scshape\sectionrule{0pt}{0pt}{-1ex}{0.1pt}}
+
+\begin{document}
+    \section*{Skills}
+        \begin{tabular}{rl}
+            \large{Linux:} & Debian (server and desktop), Debian ISO/Installer, Debian repositories, Debian packaging,\\
+                           & System Administration, Untangle NG Firewall, Software RAID (mdadm), Raspbian\\
+            \large{Programming:} & Python, Bash, C, GNU Make, Git, GitHub, Markdown, YAML, JSON, \LaTeX, HTML, CSS\\
+            \large{Electronics:} & Arduino, Raspberry Pi, EAGLE, Circuit and PCB design and construction\\
+        \end{tabular}
+    % end skills section
+
+    \section*{Experience}
+        \vspace*{1ex}
+        \textbf{Hewlett-Packard / Hewlett Packard Enterprise} (Fort Collins, Colorado) \hfill \textbf{April 2015 - October 2016} \\[1ex]
+        \emph{Systems Software Engineer}
+        \begin{itemize}
+            \item Worked on HPE's Debian derivative Linux distribution (HPE Linux), which is used as the base for several products, including HPE Helion and The Machine.
+            \item As lead developer for the HPE Linux ISOs/installers, I maintained and added new features to the installer creation tools as well as building and testing new ISOs/installers. I also transitioned the proprietary installer creation source code to Debian's open source tools (simple-cdd) and automated the ISO/installer generation process.
+            \item Contributed to Debian quality by submitting several bug reports with patches upstream to Debian. I tested my patches for these bugs on local QEMU virtual machines where I reproduced the issue, applied my patch, built the package, and then verified my solution to the bug.
+            \item Developed Python and Bash tools for HPE Linux Debian repository creation and maintenance. These tools enabled automatic repository creation, and provided human and machine readable insights into the repositories.
+            \item Developed automated tasks for CI/CD pipeline to build and validate packages, installers, and repositories. This pipeline is built with a proprietary HPE framework, Jenkins, and GitHub Enterprise. This pipeline enabled automatic scheduled repository and installer builds, as well as automatic package building and testing triggered by Git commits.
+            \item Wrote and maintained documentation for tools, tests, and processes using DokuWiki. This enabled other coworkers and teams to find, use, and build on existing solutions, instead of having to create their own.
+        \end{itemize}
+        % end HPE
+        \vspace*{2ex}
+        \textbf{Active Website / Booj} (Lakewood, Colorado) \hfill \textbf{September 2010 - October 2013}
+        \begin{itemize}
+            \item Started as an intern, then promoted to Web Developer, and again promoted to Data Specialist.
+            \item Wrote a multi-threaded Python framework to automatically download data in various formats from multiple clients and organize it into MySQL database for use on client websites.
+            \item Improved media server performance by optimizing and upgrading media storage methods and by using Nagios to find and eliminate bottlenecks in media server Python code base. Amazon CloudFront CDN was later implemented as client site traffic increased.
+            \item Set up new CentOS based Web and Media Server clusters to support increased traffic and additional client sites.
+            \item Created and maintained features for front-end and back-end website functionality using PHP and Smarty Templates.
+        \end{itemize}
+        % end Booj
+        \vspace*{2ex}
+        \textbf{Rocky Mountain Cyclery} (Loveland, Colorado) \hfill \textbf{June 2009 - August 2010}
+        \begin{itemize}
+            \item Started as Warehouse Crew, then promoted to Internet Sales Department.
+            \item Photographed and listed bicycle parts on eBay.
+            \item Organized, sorted, picked, packaged, and shipped bicycle parts ranging from nuts and bolts to entire bicycles.
+        \end{itemize}
+        % end RMC
+    % end experience section
+
+    \section*{Education}
+        \begin{itemize}
+            \item Debian Packaging class by Tim Potter at HPE
+            \begin{itemize}
+                \item In this class I learned how Debian packages are structured and how to create them both manually and automatically using standard open source Debian tools. This also included best practices for Debian packaging and how to work with the Debian community.
+            \end{itemize}
+            \item Practical Python Programming class by David M. Beazley
+            \begin{itemize}
+                \item This course covered several Python concepts such as working with various types of data, modules, libraries, object oriented programming and classes, debugging, lambdas, and decorators.
+            \end{itemize}
+            \item Graduated with High School Diploma from Resurrection Christian School in 2009
+        \end{itemize}
+    % end education section
+
+	\section*{Personal Projects}
+        \vspace*{1ex}
+        \begin{tabular}{rl}
+            \textbf{Servers} & My home server rack is comprised of several custom built Linux systems. Among them \\
+                             & is a firewall/router/UTM that runs Untangle NG and manages several home LAN's, a \\
+                             & NAS utilizing Linux software RAID 5 (mdadm), a QEMU Virtualization Server, and a \\
+                             & Folding@Home rig. \\[1ex]
+            \textbf{NES USB Adapter} & I built a USB adapter for the original NES controller using a Teensy microcontroller \\
+                                     & that allows it to be used with PC emulators. \\[1ex]
+            \textbf{Robotics} & I am building an Actobotics based robot to use for self-driving experimentation and \\
+                              & research. This robot is a roughly 1/10th scale four wheel car with two drive motors \\
+                              & and full suspension. The goal for this work in progress robot is to be able to \\
+                              & autonomously navigate around an obstacle filled track. \\[1ex]
+        \end{tabular}
+    % end personal projects section
+\end{document}
