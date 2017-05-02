@@ -2,11 +2,12 @@ Josh Gadeken's Resume
 =====================
 
 ## Debian Package Dependencies ##
-- make
-- texlive
-- texlive-latex-extra
+- `make`
+- `texlive`
+- `texlive-latex-extra`
+- `texlive-fonts-extra`
 
 ## PDF Generation ##
 ```
-make clean resume.pdf
+make clean Josh_Gadeken_Resume.pdf
 ```
