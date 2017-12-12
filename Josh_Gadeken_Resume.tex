@@ -1,7 +1,7 @@
 % Josh Gadeken Resume
 % Copyright (C) 2017 Josh Gadeken
 \documentclass[a4paper,10pt]{article}
-\usepackage[includeheadfoot, top=1cm, bottom=2cm, left=1.5cm, right=1.5cm]{geometry}
+\usepackage[includeheadfoot, top=1cm, bottom=1cm, left=1cm, right=1cm]{geometry}
 
 \usepackage[colorlinks=true,urlcolor=black]{hyperref}
 
@@ -36,6 +36,9 @@
 \usepackage{sectsty}
 \sectionfont{\mdseries\scshape\sectionrule{0pt}{0pt}{-1ex}{0.1pt}}
 
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=-1pt}
+
 \begin{document}
     \section*{Skills}
         \begin{tabular}{rl}
@@ -48,8 +51,7 @@
     % end skills section
 
     \section*{Experience}
-        \vspace*{1ex}
-        \textbf{Hewlett-Packard / Hewlett Packard Enterprise} (Fort Collins, Colorado) \hfill \textbf{April 2015 - October 2016} \\[1ex]
+        \textbf{Hewlett-Packard / Hewlett Packard Enterprise} (Fort Collins, Colorado) \hfill \textbf{April 2015 - October 2016} \\[1pt]
         \emph{Systems Software Engineer}
         \begin{itemize}
             \item Worked on HPE's Debian derivative Linux distribution (HPE Linux), which is used as the base for several products, including HPE Helion and The Machine.
