@@ -3,7 +3,7 @@ Josh Gadeken's Resume
 
 ## Debian Package Dependencies ##
 - `make`
-- `texlive`
+- `texlive-luatex`
 - `texlive-latex-extra`
 - `texlive-fonts-extra`
 

@@ -3,6 +3,9 @@
 \documentclass[letterpaper,10pt]{article}
 \usepackage[includeheadfoot, top=1.5cm, bottom=1.5cm, left=1.5cm, right=1.5cm]{geometry}
 
+\usepackage{fontspec}
+\setmainfont[Ligatures=TeX]{Liberation Sans}
+
 \usepackage[colorlinks=true,urlcolor=black]{hyperref}
 
 \usepackage{fontawesome}
@@ -17,7 +20,7 @@
 \usepackage{lastpage}
 
 \usepackage{fancyhdr}
-\setlength{\headheight}{44.0pt}
+\setlength{\headheight}{47.0pt}
 \setlength{\footskip}{12pt}
 \pagestyle{fancy}
 \fancyhf{}
@@ -28,8 +31,9 @@
     \Huge\textbf{Josh Gadeken} \\
     \vspace*{1ex}
     \normalsize
-    \begin{tabular}{l|l|l|l}
-        \faEnvelope \hspace*{1pt} \href{mailto:\myemail}{\myemail} & \faMobile \hspace*{1pt} \myphone & \faLinkedinSquare \hspace*{1pt} \href{https://www.linkedin.com/in/joshgadeken}{linkedin.com/in/joshgadeken} & \faGithub \hspace*{1pt} \href{https://github.com/process1183}{github.com/process1183} \\
+    \setlength{\tabcolsep}{4pt}
+    \begin{tabular}{c|c|c|c}
+        \faEnvelope \hspace*{1pt} \href{mailto:\myemail}{\myemail} & \faMobile \hspace*{1pt} \myphone & \faLinkedinSquare \hspace*{1pt} \href{https://www.linkedin.com/in/joshgadeken}{linkedin.com/in/joshgadeken} & \faGithub \hspace*{1pt} \href{https://github.com/process1183}{github.com/process1183}
     \end{tabular}
 }
 \fancyfoot[L]{\textcolor{gray}{Josh Gadeken R\'{e}sum\'{e}}}
@@ -81,7 +85,7 @@
 
     \section*{Skills}
         \begin{tabular}{lllll}
-            Python (2 and 3) & Git      & Debian (server and desktop) & Untangle NG Firewall & Hand Soldering / Desoldering \\
+            Python (2 and 3) & Git      & Debian (server and desktop) & Untangle NG Firewall & Soldering / Desoldering \\
             Bash             & GitHub   & Ansible                     & Raspberry Pi         & Electronics Schematics \\
             C                & OpenSCAD & Software RAID (mdadm)       & Arduino              & Multimeter Use \\
             GNU Make         & \LaTeX   & libvirt                     & KerboScript (kOS)    & Electronics Prototyping \\
