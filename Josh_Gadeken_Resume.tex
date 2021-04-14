@@ -14,6 +14,8 @@
 
 \input{contact_info.tex}
 
+\usepackage{lastpage}
+
 \usepackage{fancyhdr}
 \setlength{\headheight}{44.0pt}
 \setlength{\footskip}{12pt}
@@ -31,7 +33,7 @@
     \end{tabular}
 }
 \fancyfoot[L]{\textcolor{gray}{Josh Gadeken R\'{e}sum\'{e}}}
-\fancyfoot[R]{\textcolor{gray}{\thepage}}
+\fancyfoot[R]{\textcolor{gray}{\thepage\ / \pageref*{LastPage}}}
 
 \usepackage{sectsty}
 \sectionfont{\mdseries\scshape\sectionrule{0pt}{0pt}{-1ex}{0.1pt}}
